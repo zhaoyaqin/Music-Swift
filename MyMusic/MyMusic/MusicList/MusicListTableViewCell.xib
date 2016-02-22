@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="MusicListTableViewCell" customModule="MyMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-7z-wGC">
+                        <rect key="frame" x="136.5" y="36" width="42.5" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="singer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-WD-8KM">
+                        <rect key="frame" x="136.5" y="76" width="47.5" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-Xj-bZi">
+                        <rect key="frame" x="5" y="5" width="121.5" height="121.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tNn-Xj-bZi" secondAttribute="height" multiplier="1:1" id="ejZ-xe-7kL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="tNn-Xj-bZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="2Sz-UD-loj"/>
+                    <constraint firstItem="tNn-Xj-bZi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="AXL-Kj-CZY"/>
+                    <constraint firstItem="6Ee-WD-8KM" firstAttribute="centerY" secondItem="tNn-Xj-bZi" secondAttribute="centerY" constant="20" id="FO8-hb-Sem"/>
+                    <constraint firstItem="6Ee-WD-8KM" firstAttribute="leading" secondItem="tNn-Xj-bZi" secondAttribute="trailing" constant="10" id="NeE-O7-91D"/>
+                    <constraint firstItem="f9f-7z-wGC" firstAttribute="centerY" secondItem="tNn-Xj-bZi" secondAttribute="centerY" constant="-20" id="mhS-Mi-9Sa"/>
+                    <constraint firstAttribute="bottom" secondItem="tNn-Xj-bZi" secondAttribute="bottom" constant="5" id="sfl-fV-HvC"/>
+                    <constraint firstItem="f9f-7z-wGC" firstAttribute="leading" secondItem="tNn-Xj-bZi" secondAttribute="trailing" constant="10" id="xer-12-La6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="musicImage" destination="tNn-Xj-bZi" id="xsV-FU-Jgw"/>
+                <outlet property="musicName" destination="f9f-7z-wGC" id="Sy2-pu-4kc"/>
+                <outlet property="singer" destination="6Ee-WD-8KM" id="zjC-TT-nX3"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="302"/>
+        </tableViewCell>
+    </objects>
+</document>
